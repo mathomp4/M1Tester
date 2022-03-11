@@ -84,9 +84,10 @@ set (NO_ALIAS "")
 
 set (NO_RANGE_CHECK "-fno-range-check")
 
+message(STATUS "---------- Processor Info ----------")
 cmake_host_system_information(RESULT proc_decription QUERY PROCESSOR_DESCRIPTION)
-message(STATUS "MATMAT proc_decription: ${proc_decription}")
-message(STATUS "MATMAT CMAKE_HOST_SYSTEM_PROCESSOR: ${CMAKE_HOST_SYSTEM_PROCESSOR}")
+message(STATUS "proc_decription: ${proc_decription}")
+message(STATUS "CMAKE_HOST_SYSTEM_PROCESSOR: ${CMAKE_HOST_SYSTEM_PROCESSOR}")
 
 if ( ${CMAKE_HOST_SYSTEM_PROCESSOR} STREQUAL aarch64 )
    set (GNU_TARGET_ARCH "armv8.2-a+crypto+crc+fp16+rcpc+dotprod")

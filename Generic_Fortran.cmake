@@ -8,6 +8,7 @@ set (CMAKE_Fortran_FLAGS_DEBUG      "${GEOS_Fortran_FLAGS_DEBUG}"      CACHE STR
 set (CMAKE_Fortran_FLAGS_RELEASE    "${GEOS_Fortran_FLAGS_RELEASE}"    CACHE STRING "Release Fortran flags"    FORCE )
 set (CMAKE_Fortran_FLAGS_AGGRESSIVE "${GEOS_Fortran_FLAGS_AGGRESSIVE}" CACHE STRING "Aggressive Fortran flags" FORCE )
 
-message(STATUS "MATMAT CMAKE_Fortran_FLAGS_DEBUG: ${CMAKE_Fortran_FLAGS_DEBUG}")
-message(STATUS "MATMAT CMAKE_Fortran_FLAGS_RELEASE: ${CMAKE_Fortran_FLAGS_RELEASE}")
-message(STATUS "MATMAT CMAKE_Fortran_FLAGS_AGGRESSIVE: ${CMAKE_Fortran_FLAGS_AGGRESSIVE}")
+message(STATUS "---------- Flags ----------")
+message(STATUS "CMAKE_Fortran_FLAGS_DEBUG: ${CMAKE_Fortran_FLAGS_DEBUG}")
+message(STATUS "CMAKE_Fortran_FLAGS_RELEASE: ${CMAKE_Fortran_FLAGS_RELEASE}")
+message(STATUS "CMAKE_Fortran_FLAGS_AGGRESSIVE: ${CMAKE_Fortran_FLAGS_AGGRESSIVE}")
